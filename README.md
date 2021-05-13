@@ -2,11 +2,11 @@
 
 It is a voice assistant which can be used to interact with your computer and also you have been seeing it in Iron man movies, but this JARVIS is not that much advanced as shown in movies. 
 
-## Built with: Python<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" alt="Python" height="40" style="vertical-align:top">
+### Built with: Python<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" alt="Python" height="40" style="vertical-align:top">
 
 - Demo video for ***JARVIS*** is available [here](https://docs.google.com/presentation/d/14w4dQUpqVOmGvAXEn8vYkHQUmMYU72wIb-AK0SWCWYk/edit?usp=sharing)
 
-## Cool functionalities of JARVIS 😎 :)
+### Cool functionalities of JARVIS 😎 :)
 <p align="center"><img src="https://thumbs.gfycat.com/FreshAnyHanumanmonkey-size_restricted.gif" alt="JARVIS" width="75%"/></a></p>
 
 
@@ -50,15 +50,15 @@ I have wrote code which you can use JARVIS in the following ways :
 
 > **NOTE:** Before running the code you must make sure you have all the modules installed in your python version(***NOTE:*** python version can be >=3.6).
 
-## These are the following modules used in JARVIS😉 :
+### These are the following modules used in JARVIS😉 :
 
 [SpeechRecognisation](https://pypi.org/project/SpeechRecognition/) | [PyAudio](https://pypi.org/project/PyAudio/) | [pyttsx3](https://pypi.org/project/pyttsx3/) | [pywhatkit](https://pypi.org/project/pywhatkit/) | [datetime](https://pypi.org/project/DateTime/) | [wikipedia](https://pypi.org/project/wikipedia/) | [pyjokes](https://pypi.org/project/pyjokes/) | [cv2](https://pypi.org/project/opencv-python/) | [cv2 tools](https://pypi.org/project/cv2-tools/) | [requests](https://pypi.org/project/requests/) | [smtplib](https://pypi.org/project/secure-smtplib/) | [psutil](https://pypi.org/project/psutil/) | [random](https://pypi.org/project/random2/) | [instaloader](https://pypi.org/project/instaloader/) | [PyAutoGUI](https://pypi.org/project/PyAutoGUI/) | [PyPDF2](https://pypi.org/project/PyPDF2/) | [bs4](https://pypi.org/project/bs4/) | [PyQt5](https://pypi.org/project/PyQt5-Qt5/) | [pywikihow](https://pypi.org/project/pywikihow/) | [speed test](https://pypi.org/project/speedtest-cli/) | [pytube](https://pypi.org/project/pytube/) | [numpy](https://pypi.org/project/numpy/) | [urllib](https://pypi.org/project/urllib3/) 
 
-## API keys
+### API keys
 To run this project you should need a API key for reading news. Register for your API key by clicking the following
 - [NewsAPI](https://newsapi.org/) : used for fetching news
 
-## Installation
+### Installation
 - You need to first clone this repository
 - Make sure to install all the required python modules mentioned above
 - Add the correct **pc** paths for opening the **pc applications**
@@ -72,7 +72,7 @@ That's it #enjoy speaking with your computer friend 😁
 
 Demo video for ***JARVIS*** is available [here](https://docs.google.com/presentation/d/14w4dQUpqVOmGvAXEn8vYkHQUmMYU72wIb-AK0SWCWYk/edit?usp=sharing)
 
-### **FINAL GUI of JARVIS**
+### FINAL GUI of JARVIS😎
 <p align="center"><img src="JAR.gif" alt="JARVIS" width="75%"/></a></p>
 
 If you like this repository **```FORK```** this repository, start using JARVIS, and 🌟 this repository.
