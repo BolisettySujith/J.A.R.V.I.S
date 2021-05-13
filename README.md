@@ -48,7 +48,7 @@ I have wrote a code which you can use JARVIS in the following ways :
 - It can **sleep until you say wake up**
 - Finally It **can interact with you** and you can also add more commands if you want😎
 
-> **NOTE:** Before running the code you must make sure you have all the modules installed installed in your python version(***NOTE:*** python version can be >=3.6).
+> **NOTE:** Before running the code you must make sure you have all the modules installed in your python version(***NOTE:*** python version can be >=3.6).
 
 ## These are the following modules used in JARVIS😉 :
 
@@ -75,4 +75,4 @@ Demo video for ***JARVIS*** is available [here](https://docs.google.com/presenta
 ### **GUI OUTPUT**
 <p align="center"><img src="JAR.gif" alt="JARVIS" width="75%"/></a></p>
 
-If you like this repository **fork** this repository and 🌟 this repository.
+If you like this repository **```FORK```** this repository and 🌟 this repository.
