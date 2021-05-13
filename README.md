@@ -59,7 +59,9 @@ To run this project you should need a API key for reading news. Register for you
 - [NewsAPI](https://newsapi.org/) : used for fetching news
 
 ### Installation
-- You need to first clone this repository
+- You need to first ```fork``` this repository and ```clone``` the repository to your local system 
+
+    ```git clone https://github.com/<your-github-username>/J.A.R.V.I.S.git```
 - Make sure to install all the required python modules mentioned above
 - Add the correct **pc** paths for opening the **pc applications**
 - Add the correct contact details in the dictionary to send whatsapp messages
