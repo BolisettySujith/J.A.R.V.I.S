@@ -72,7 +72,7 @@ That's it #enjoy speaking with your computer friend 😁
 
 Demo video for ***JARVIS*** is available [here](https://docs.google.com/presentation/d/14w4dQUpqVOmGvAXEn8vYkHQUmMYU72wIb-AK0SWCWYk/edit?usp=sharing)
 
-### **GUI OUTPUT**
+### **FINAL GUI of JARVIS**
 <p align="center"><img src="JAR.gif" alt="JARVIS" width="75%"/></a></p>
 
-If you like this repository **```FORK```** this repository and 🌟 this repository.
+If you like this repository **```FORK```** this repository, start using JARVIS, and 🌟 this repository.
