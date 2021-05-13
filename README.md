@@ -10,7 +10,7 @@ It is a voice assistant which can be used to interact your computer with and als
 <p align="center"><img src="https://thumbs.gfycat.com/FreshAnyHanumanmonkey-size_restricted.gif" alt="JARVIS" width="75%"/></a></p>
 
 
-I have wrote a code which you can use JARVIS in the following ways :
+I have wrote code which you can use JARVIS in the following ways :
 
 - It can access your **mobile camera**
 - It can access your **web camera**
