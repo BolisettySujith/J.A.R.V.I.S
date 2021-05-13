@@ -65,7 +65,7 @@ To run this project you should need some API key. Register your API key by click
 - Add the correct contact details in the dictionary to send whatsapp messages
 - Add your mail id to send emails
 - For using mobile camera you need to first install an app in mobile called [IP Webcam](https://play.google.com/store/apps/details?id=com.pas.webcam&hl=en_US&gl=US) after installing go to **START SERVER** it will open your mobile camara at the bottom of the screen you can see **IPv4** there you can find the IP address and replace ```_IP_Webcam_IP_address_``` with the IP address in ```JARVIS.py``` MobileCamera function(line: 332)
-- Add the correct paths to gifs in **```JarvisUi.py```**
+- Add the correct system paths to gifs in **```JarvisUi.py```**
 - Finally run the  **```python JARVIS.py```** file
 
 That's it #enjoy speaking with your computer friend 😁
