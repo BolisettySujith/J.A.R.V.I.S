@@ -52,11 +52,15 @@ I have wrote code which you can use JARVIS in the following ways :
 
 ### These are the following modules used in JARVIS😉 :
 
-[SpeechRecognisation](https://pypi.org/project/SpeechRecognition/) | [PyAudio](https://pypi.org/project/PyAudio/) | [pyttsx3](https://pypi.org/project/pyttsx3/) | [pywhatkit](https://pypi.org/project/pywhatkit/) | [datetime](https://pypi.org/project/DateTime/) | [wikipedia](https://pypi.org/project/wikipedia/) | [pyjokes](https://pypi.org/project/pyjokes/) | [cv2](https://pypi.org/project/opencv-python/) | [cv2 tools](https://pypi.org/project/cv2-tools/) | [requests](https://pypi.org/project/requests/) | [smtplib](https://pypi.org/project/secure-smtplib/) | [psutil](https://pypi.org/project/psutil/) | [random](https://pypi.org/project/random2/) | [instaloader](https://pypi.org/project/instaloader/) | [PyAutoGUI](https://pypi.org/project/PyAutoGUI/) | [PyPDF2](https://pypi.org/project/PyPDF2/) | [bs4](https://pypi.org/project/bs4/) | [PyQt5](https://pypi.org/project/PyQt5-Qt5/) | [pywikihow](https://pypi.org/project/pywikihow/) | [speed test](https://pypi.org/project/speedtest-cli/) | [pytube](https://pypi.org/project/pytube/) | [numpy](https://pypi.org/project/numpy/) | [urllib](https://pypi.org/project/urllib3/) 
+[SpeechRecognisation](https://pypi.org/project/SpeechRecognition/) | [PyAudio](https://pypi.org/project/PyAudio/) | [pyttsx3](https://pypi.org/project/pyttsx3/) | [pywhatkit](https://pypi.org/project/pywhatkit/) | [datetime](https://pypi.org/project/DateTime/) | [wikipedia](https://pypi.org/project/wikipedia/) | [pyjokes](https://pypi.org/project/pyjokes/) | [cv2](https://pypi.org/project/opencv-python/) | [cv2 tools](https://pypi.org/project/cv2-tools/) | [requests](https://pypi.org/project/requests/) | [smtplib](https://pypi.org/project/secure-smtplib/) | 
+
+[psutil](https://pypi.org/project/psutil/) | [random](https://pypi.org/project/random2/) | [instaloader](https://pypi.org/project/instaloader/) | [PyAutoGUI](https://pypi.org/project/PyAutoGUI/) | [PyPDF2](https://pypi.org/project/PyPDF2/) | [bs4](https://pypi.org/project/bs4/) | [PyQt5](https://pypi.org/project/PyQt5-Qt5/) | [pywikihow](https://pypi.org/project/pywikihow/) | [speed test](https://pypi.org/project/speedtest-cli/) | [pytube](https://pypi.org/project/pytube/) | [numpy](https://pypi.org/project/numpy/) | [urllib](https://pypi.org/project/urllib3/) 
 
 ### API keys
 To run this project you should need a API key for reading news. Register for your API key by clicking the following
 - [NewsAPI](https://newsapi.org/) : used for fetching news
+
+The code for this project link is available [here](https://github.com/BolisettySujith/J.A.R.V.I.S) in GitHub.
 
 ### Installation
 - You need to first ```fork``` this repository and ```clone``` the repository to your local system 
@@ -90,4 +94,14 @@ Demo video for ***JARVIS*** is available [here](https://docs.google.com/presenta
 ### FINAL GUI of JARVIS😎
 <p align="center"><img src="JAR.gif" alt="JARVIS" width="75%"/></a></p>
 
-If you like this repository **```FORK```** this repository, start using JARVIS, and 🌟 this repository.
+The code for this project link is available [here](https://github.com/BolisettySujith/J.A.R.V.I.S) in GitHub.
+
+If you like the repository **```FORK```** the repository, start using JARVIS, and 🌟 the repository.
+
+### How to Contribute 🤔
+
+To contribute to this project you can clone the project as mentioned in *Installation*, and make an issue on bug fixing or adding new features, and make a PR 😊.
+
+### Future plans😇
+
+In the present JARVIS GUI we cannot see the commands running but they are visible on the terminal, so plan to bring up the commands to display on the GUI.
