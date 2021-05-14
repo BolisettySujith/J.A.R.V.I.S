@@ -75,7 +75,7 @@ To run this project you should need a API key for reading news. Register for you
     ```pip install PyAudio```
 
     Most probably the errors will be resolved
-- Add the correct **system** paths for JARVIS to open the **system applications**
+- Add the correct **system** paths in ```JARVIS.py``` to open the **system applications**
 - Add the **correct contact details** and **Group ID numbers** in the **dictionary** to send whatsapp messages(line: 51)
 - Add your **gmail id** and **password** to send emails(line:797,798)
 - Make sure you have registerd in [NewsAPI](https://newsapi.org/) and replace the ```apiKey=```**```YOUR_NEWS_API_KEY```** with your API key(Line: 852)
