@@ -90,4 +90,12 @@ Demo video for ***JARVIS*** is available [here](https://docs.google.com/presenta
 ### FINAL GUI of JARVIS😎
 <p align="center"><img src="JAR.gif" alt="JARVIS" width="75%"/></a></p>
 
-If you like this repository **```FORK```** this repository, start using JARVIS, and 🌟 this repository.
+### How to Contribute 🤔
+
+To contribute to this project you can clone the project as mentioned in *Installation*, and make an issue on bug fixing or adding new features, and make a PR 😊.
+
+### Future plans😇
+
+In the present JARVIS GUI we cannot see the commands running but they are visible on the terminal, so plan to bring up the commands to display on the GUI.
+
+If you like the repository **```FORK```** the repository, start using JARVIS, and 🌟 the repository.
