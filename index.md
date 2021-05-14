@@ -60,8 +60,6 @@ I have wrote code which you can use JARVIS in the following ways :
 To run this project you should need a API key for reading news. Register for your API key by clicking the following
 - [NewsAPI](https://newsapi.org/) : used for fetching news
 
-The code for this project link is available [here](https://github.com/BolisettySujith/J.A.R.V.I.S) in GitHub.
-
 ### Installation
 - You need to first ```fork``` this repository and ```clone``` the repository to your local system 
 
@@ -94,9 +92,6 @@ Demo video for ***JARVIS*** is available [here](https://docs.google.com/presenta
 ### FINAL GUI of JARVIS😎
 <p align="center"><img src="JAR.gif" alt="JARVIS" width="75%"/></p>
 
-The code for this project link is available [here](https://github.com/BolisettySujith/J.A.R.V.I.S) in GitHub.
-
-If you like the repository **```FORK```** the repository, start using JARVIS, and 🌟 the repository.
 
 ### How to Contribute 🤔
 
@@ -105,3 +100,5 @@ To contribute to this project you can clone the project as mentioned in *Install
 ### Future plans😇
 
 In the present JARVIS GUI we cannot see the commands running but they are visible on the terminal, so plan to bring up the commands to display on the GUI.
+
+If you like the repository **```FORK```** the repository, start using JARVIS, and 🌟 the repository.
