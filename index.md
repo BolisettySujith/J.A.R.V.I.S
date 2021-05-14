@@ -7,7 +7,7 @@ It is a voice assistant which can be used to interact with your computer and als
 - Demo video for ***JARVIS*** is available [here](https://docs.google.com/presentation/d/14w4dQUpqVOmGvAXEn8vYkHQUmMYU72wIb-AK0SWCWYk/edit?usp=sharing)
 
 ### Cool functionalities of JARVIS 😎 :)
-<p align="center"><img src="https://thumbs.gfycat.com/FreshAnyHanumanmonkey-size_restricted.gif" alt="JARVIS" width="75%"/></a></p>
+<p align="center"><img src="https://thumbs.gfycat.com/FreshAnyHanumanmonkey-size_restricted.gif" alt="JARVIS" width="75%"/></p>
 
 
 I have wrote code which you can use JARVIS in the following ways :
@@ -92,7 +92,7 @@ That's it **#Enjoy** speaking with your computer friend 😁
 Demo video for ***JARVIS*** is available [here](https://docs.google.com/presentation/d/14w4dQUpqVOmGvAXEn8vYkHQUmMYU72wIb-AK0SWCWYk/edit?usp=sharing)
 
 ### FINAL GUI of JARVIS😎
-<p align="center"><img src="JAR.gif" alt="JARVIS" width="75%"/></a></p>
+<p align="center"><img src="JAR.gif" alt="JARVIS" width="75%"/></p>
 
 The code for this project link is available [here](https://github.com/BolisettySujith/J.A.R.V.I.S) in GitHub.
 
