@@ -77,12 +77,12 @@ To run this project you should need a API key for reading news. Register for you
     ```pip install PyAudio```
 
     Most probably the errors will be resolved
-- Add the correct **system** paths in ```JARVIS.py``` to open the **system applications**
-- Add the **correct contact details** and **Group ID numbers** in the **dictionary** to send whatsapp messages(line: 51)
-- Add your **gmail id** and **password** to send emails(line:797,798)
+- Add the correct ```system``` paths in ```JARVIS.py``` to open the ```system applications```
+- Add the ```correct contact details``` and ```Group ID numbers``` in the ```dictionary``` to send whatsapp messages(line: 51)
+- Add your ```gmail id``` and ```password``` to send emails(line:797,798)
 - Make sure you have registerd in [NewsAPI](https://newsapi.org/) and replace the ```apiKey=```**```YOUR_NEWS_API_KEY```** with your API key(Line: 852)
-- For using mobile camera you need to first install an app in mobile called [IP Webcam](https://play.google.com/store/apps/details?id=com.pas.webcam&hl=en_US&gl=US) after installing go to **START SERVER** it will open your mobile camara at the bottom of the screen you can see **IPv4** there you can find the IP address and replace ```_IP_Webcam_IP_address_``` with the IP address in ```JARVIS.py``` MobileCamera function(line: 332)
-- Add the correct system paths to gifs in **```JarvisUi.py```**
+- For using mobile camera you need to first install an app in mobile called [IP Webcam](https://play.google.com/store/apps/details?id=com.pas.webcam&hl=en_US&gl=US) after installing go to ```START SERVER``` it will open your mobile camara at the bottom of the screen you can see **IPv4** there you can find the IP address and replace ```_IP_Webcam_IP_address_``` with the IP address in ```JARVIS.py``` MobileCamera function(line: 332)
+- Add the correct system paths to gifs in **```JarvisUi.py```** and **```JARVIS.py```** files
 - Finally run the  **```python JARVIS.py```** file
 
 That's it **#Enjoy** speaking with your computer friend 😁
