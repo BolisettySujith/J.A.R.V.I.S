@@ -98,4 +98,4 @@ To contribute to this project you can clone the project as mentioned in *Install
 
 In the present JARVIS GUI we cannot see the commands running but they are visible on the terminal, so plan to bring up the commands to display on the GUI.
 
-If you like the repository **```FORK```** the repository, start using JARVIS, and 🌟 the repository.
+If you like the repository **```FORK```** 🍴 the repository, start using JARVIS, and 🌟 the repository.
