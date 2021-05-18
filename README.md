@@ -90,6 +90,9 @@ Demo video for ***JARVIS*** is available [here](https://docs.google.com/presenta
 ### FINAL GUI of JARVIS😎
 <p align="center"><img src="JAR.gif" alt="JARVIS" width="75%"/></a></p>
 
+### Motivation for this project🙃
+Due to covid19 in my house I'm in a seperate room, without talking with anyone, so thought to talk with my laptop which I will use everyday, and came up with this project.
+
 ### How to Contribute 🤔
 
 To contribute to this project you can clone the project as mentioned in *Installation*, and make an issue on bug fixing or adding new features, and make a PR 😊.
