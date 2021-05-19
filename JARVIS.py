@@ -29,6 +29,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.uic import loadUiType
 from JarvisUi import Ui_JarvisUI
+from state import state
 from pywikihow import search_wikihow
 import speedtest
 from pytube import YouTube
@@ -72,6 +73,8 @@ class MainThread(QThread):
                 command1 = command1.lower()  
                 if 'jarvis' in command1: 
                     command1 = command1.replace('jarvis','')
+                if 'java' in command1: 
+                    command1 = command1.replace('java','')
                 
             return command1
         except:
@@ -207,6 +210,12 @@ class MainThread(QThread):
             #Eg: jarvis open webcamera
             elif ('web cam'in self.command) :
                 self.webCam()
+            #Command for checking covid status in India
+            #Eg: jarvis check covid (or) corona status
+            elif ("covid" in self.command) or  ("corona" in self.command):
+                self.talk("Boss which state covid 19 status do you want to check")
+                s = self.take_Command()
+                self.Covid(s)
             #command for playing a dowloaded mp3 song in which is present in your system
             #Eg: Jarvis play music
             elif 'music' in self.command:
@@ -355,6 +364,41 @@ class MainThread(QThread):
                 break
         cap.release()
         cv2.destroyAllWindows()
+
+    
+    #covid 
+    def Covid(self,s):
+        try:
+            from covid_india import states
+            details = states.getdata()
+            if "check in" in s:
+                s = s.replace("check in","").strip()
+                print(s)
+            elif "check" in s:
+                s = s.replace("check","").strip()
+                print(s)
+            elif "tech" in s:
+                s = s.replace("tech","").strip()
+            s = state[s]
+            ss = details[s]
+            Total = ss["Total"]
+            Active = ss["Active"]
+            Cured = ss["Cured"]
+            Death = ss["Death"]
+            print(f"Boss the total cases in {s} are {Total}, the number of active cases are {Active}, and {Cured} people cured, and {Death} people are death")
+            self.talk(f"Boss the total cases in {s} are {Total}, the number of active cases are {Active}, and {Cured} people cured, and {Death} people are death")
+            time.sleep(5)
+            self.talk("Boss do you want any information of other states")
+            I = self.take_Command()
+            print(I)
+            if ("check" in I):
+                self.Covid(I)
+            else:
+                self.talk("Okay boss stay home stay safe")
+                pass
+        except:
+            self.talk("Boss some error occured, please try again")
+            self.Covid()
 
     #Whatsapp
     def whatsapp(self,command):
