@@ -12,7 +12,7 @@ It is a voice assistant which can be used to interact with your computer and als
 
 I have wrote code which you can use JARVIS in the following ways :
 
-- It can tell **Covid-19 cases for each state in India**
+- It can tell **count of Covid-19 cases for each state in India**
 - It can access your **mobile camera**
 - It can access your **web camera**
 - It can read **pdf's**
