@@ -67,8 +67,8 @@ To run this project you should need a API key for reading news. Register for you
 - Make sure to install all the required python modules mentioned above or you can simply install them by 
 
     ```pip install -r requirements.txt```
-    
-    > Note: For any errors while installing the python modules refer **```ERRORS.md```** because I got some errors while installing and using them.
+
+    > Note: For any errors while installing the python modules refer [**```ERRORS.md```**](https://github.com/BolisettySujith/J.A.R.V.I.S/blob/main/ERRORS.md) because I got some errors while installing and using them.
 - Add the correct **system** paths in ```JARVIS.py``` to open the **system applications**
 - Add the **correct contact details** and **Group ID numbers** in the **dictionary** to send whatsapp messages(line: 51)
 - Add your **gmail id** and **password** to send emails(line:797,798)
@@ -84,7 +84,7 @@ Demo video for ***JARVIS*** is available [here](https://docs.google.com/presenta
 ### FINAL GUI of JARVIS😎
 <p align="center"><img src="JAR.gif" alt="JARVIS" width="75%"/></a></p>
 
-> Note: For any errors while installing the python modules refer **```ERRORS.md```** because I got some errors while installing and using them.
+> Note: For any errors while installing the python modules refer [**```ERRORS.md```**](https://github.com/BolisettySujith/J.A.R.V.I.S/blob/main/ERRORS.md) because I got some errors while installing and using them.
 
 ### Motivation for this project🙃
 Due to covid19 in my house I'm in a seperate room, without talking with anyone, so thought to talk with my laptop which I will use everyday, and came up with this project.
