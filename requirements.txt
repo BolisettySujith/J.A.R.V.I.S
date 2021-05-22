@@ -31,4 +31,7 @@ os-sys==2.1.4
 subprocess32==3.5.4
 qt5-applications==5.15.2.2.1
 qt5-tools==5.15.2.1.0.1
+Pillow==8.2.0
+PyWave==0.5.0
+ffmpeg-normalize==1.22.1
 PyAudio==0.2.11
