@@ -398,7 +398,7 @@ class MainThread(QThread):
                 pass
         except:
             self.talk("Boss some error occured, please try again")
-            self.talk("Boss do you want any information of other states")
+            self.talk("Boss which state covid 19 status do you want to check")
             I = self.take_Command()
             self.Covid(I)
 
