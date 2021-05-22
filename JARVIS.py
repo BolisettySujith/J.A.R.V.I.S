@@ -398,7 +398,9 @@ class MainThread(QThread):
                 pass
         except:
             self.talk("Boss some error occured, please try again")
-            self.Covid()
+            self.talk("Boss do you want any information of other states")
+            I = self.take_Command()
+            self.Covid(I)
 
     #Whatsapp
     def whatsapp(self,command):
