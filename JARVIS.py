@@ -20,6 +20,12 @@ import psutil
 import instaloader
 import pyautogui
 import PyPDF2
+from ScreenRecorder import Recording
+from PIL import ImageGrab
+from win32api import GetSystemMetrics
+import pyaudio
+import wave
+import numpy as np 
 from bs4 import BeautifulSoup
 from PyQt5 import QtWidgets, QtCore, QtGui
 from PyQt5.QtCore import QTimer,QTime,QDate,Qt
@@ -216,6 +222,15 @@ class MainThread(QThread):
                 self.talk("Boss which state covid 19 status do you want to check")
                 s = self.take_Command()
                 self.Covid(s)
+            #Command for screenRecording
+            #Eg: Jarvis start Screen recording
+            elif ("recording" in self.command) or ("screen recording" in self.command):
+                self.talk("Boss screen recording is started")
+                try:
+                    Recording()
+                except:
+                    self.talk("Boss an unexpected error occured couldn't start screen recording")
+                self.talk("Boss recording is being saved")
             #command for playing a dowloaded mp3 song in which is present in your system
             #Eg: Jarvis play music
             elif 'music' in self.command:
