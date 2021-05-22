@@ -13,6 +13,7 @@ It is a voice assistant which can be used to interact with your computer and als
 I have wrote code which you can use JARVIS in the following ways :
 
 - It can tell **count of Covid-19 cases for each state in India**
+- It can do **Screen Recording with voice recording** stuff.
 - It can access your **mobile camera**
 - It can access your **web camera**
 - It can read **pdf's**
@@ -67,21 +68,13 @@ To run this project you should need a API key for reading news. Register for you
 
     ```pip install -r requirements.txt```
     
-    For PyAudio errors in **windows**, please refere stackoverflow solution [here](https://stackoverflow.com/questions/52283840/i-cant-install-pyaudio-on-windows-how-to-solve-error-microsoft-visual-c-14)
-    
-    For PyAudio installation errors in **linux**. You need to follow the below instructions:
-    
-    ```sudo apt-get install portaudio19-dev python-pyaudio```
-    
-    ```pip install PyAudio```
-
-    Most probably the errors will be resolved
+    > Note: For any errors while installing the python modules refer **```ERRORS.md```** because I got some errors while installing and using them.
 - Add the correct **system** paths in ```JARVIS.py``` to open the **system applications**
 - Add the **correct contact details** and **Group ID numbers** in the **dictionary** to send whatsapp messages(line: 51)
 - Add your **gmail id** and **password** to send emails(line:797,798)
 - Make sure you have registerd in [NewsAPI](https://newsapi.org/) and replace the ```apiKey=```**```YOUR_NEWS_API_KEY```** with your API key(Line: 852)
 - For using mobile camera you need to first install an app in mobile called [IP Webcam](https://play.google.com/store/apps/details?id=com.pas.webcam&hl=en_US&gl=US) after installing go to **START SERVER** it will open your mobile camara at the bottom of the screen you can see **IPv4** there you can find the IP address and replace ```_IP_Webcam_IP_address_``` with the IP address in ```JARVIS.py``` MobileCamera function(line: 332)
-- Add the correct system paths to gifs in **```JarvisUi.py```**
+- Add the correct system paths to gifs in **```JarvisUi.py```** and **```JARVIS.py```**
 - Finally run the  **```python JARVIS.py```** file
 
 That's it **#Enjoy** speaking with your computer friend 😁
@@ -90,6 +83,8 @@ Demo video for ***JARVIS*** is available [here](https://docs.google.com/presenta
 
 ### FINAL GUI of JARVIS😎
 <p align="center"><img src="JAR.gif" alt="JARVIS" width="75%"/></a></p>
+
+> Note: For any errors while installing the python modules refer **```ERRORS.md```** because I got some errors while installing and using them.
 
 ### Motivation for this project🙃
 Due to covid19 in my house I'm in a seperate room, without talking with anyone, so thought to talk with my laptop which I will use everyday, and came up with this project.
