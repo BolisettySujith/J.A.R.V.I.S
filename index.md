@@ -13,6 +13,7 @@ It is a voice assistant which can be used to interact with your computer and als
 I have wrote code which you can use JARVIS in the following ways :
 
 - It can tell **count of Covid-19 cases for each state in India**
+- Ic can do **Screen Recording with voice recording** stuff
 - It can access your **mobile camera**
 - It can access your **web camera**
 - It can read **pdf's**
@@ -68,16 +69,7 @@ To run this project you should need a API key for reading news. Register for you
 - Make sure to install all the required python modules mentioned above or you can simply install them by 
 
     ```pip install -r requirements.txt```
-    
-    For PyAudio errors in **windows**, please refere stackoverflow solution [here](https://stackoverflow.com/questions/52283840/i-cant-install-pyaudio-on-windows-how-to-solve-error-microsoft-visual-c-14)
-    
-    For PyAudio installation errors in **linux**. You need to follow the below instructions:
-    
-    ```sudo apt-get install portaudio19-dev python-pyaudio```
-    
-    ```pip install PyAudio```
 
-    Most probably the errors will be resolved
 - Add the correct ```system``` paths in ```JARVIS.py``` to open the ```system applications```
 - Add the ```correct contact details``` and ```Group ID numbers``` in the ```dictionary``` to send whatsapp messages(line: 51)
 - Add your ```gmail id``` and ```password``` to send emails(line:797,798)
