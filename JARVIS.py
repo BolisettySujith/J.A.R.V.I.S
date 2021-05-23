@@ -26,6 +26,7 @@ from win32api import GetSystemMetrics
 import pyaudio
 import wave
 import numpy as np 
+from PhoneNumer import Phonenumber_location_tracker
 from bs4 import BeautifulSoup
 from PyQt5 import QtWidgets, QtCore, QtGui
 from PyQt5.QtCore import QTimer,QTime,QDate,Qt
@@ -228,9 +229,21 @@ class MainThread(QThread):
                 self.talk("Boss screen recording is started")
                 try:
                     Recording()
+                    self.talk("Boss recording is being saved")
                 except:
                     self.talk("Boss an unexpected error occured couldn't start screen recording")
-                self.talk("Boss recording is being saved")
+            #Command for phone number tracker
+            elif ("track" in self.command) or ("track a mobile number" in self.command):
+                self.talk("Boss please enter the mobile number with country code")
+                try:
+                    location,servise_prover,lat,lng=Phonenumber_location_tracker()
+                    self.talk(f"Boss the mobile number is from {location} and the service provider for the mobile number is {servise_prover}")
+                    self.talk(f"latitude of that mobile nuber is {lat} and longitude of that mobile number is {lng}")
+                    print(location,servise_prover)
+                    print(f"Latitude : {lat} and Longitude : {lng}")
+                    self.talk("Boss location of the mobile number is saved in Maps")
+                except:
+                    self.talk("Boss an unexpected error occured couldn't track the mobile number")
             #command for playing a dowloaded mp3 song in which is present in your system
             #Eg: Jarvis play music
             elif 'music' in self.command:
