@@ -33,5 +33,8 @@ qt5-applications==5.15.2.2.1
 qt5-tools==5.15.2.1.0.1
 Pillow==8.2.0
 PyWave==0.5.0
+phonenumbers==8.12.23
+folium==0.12.1
+opencage==1.2.2
 ffmpeg-normalize==1.22.1
 PyAudio==0.2.11
