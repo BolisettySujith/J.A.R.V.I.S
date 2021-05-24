@@ -7,8 +7,10 @@ from win32api import GetSystemMetrics
 import pyaudio
 import wave
 import subprocess
+import msvcrt
 
 def Record_Option(option):
+    
     audio = pyaudio.PyAudio()
     time_stamp = datetime.datetime.now().strftime('%Y-%m-%d-%H-%M-%S')    
     VideoFile_name = f'E:\\amFOSS\\JARVIS\\Recorded\\Screen\\VideoFile-{time_stamp}.mp4'
@@ -16,13 +18,14 @@ def Record_Option(option):
     OutputFileName = f'E:\\amFOSS\\JARVIS\\Recorded\\SCREENRECORDED\\VideoFile-{time_stamp}.mp4'
     frames=[]
     stream = audio.open(format=pyaudio.paInt16,channels=1,rate=44100,input=True,frames_per_buffer=1024)
-    if  ("screen recording" in option) or ("screen" in option):
+    if "screen recording" in option:
         ScreenRecording(audio,VideoFile_name,AudioFile_name,OutputFileName,frames,stream)
-    elif ("voice recording" in option) or ("voice" in option):
+    elif "voice recording" in option:
         VoiceRecording(stream,frames,AudioFile_name,audio)
 
 def ScreenRecording(audio,VideoFile_name,AudioFile_name,OutputFileName,frames,stream):
-    print("Screen Recording started")
+    print("Screen Recording has been started")
+    print("press the key 'q' to exit stop screen recording")
     #fetching the systems resolution
     width = GetSystemMetrics(0)
     height = GetSystemMetrics(1)
@@ -54,6 +57,7 @@ def ScreenRecording(audio,VideoFile_name,AudioFile_name,OutputFileName,frames,st
     #merging the video file and audio fiile into one file by wring this command into the cmd
     cmd = f"ffmpeg -i {VideoFile_name} -i {AudioFile_name} -c:v copy -c:a aac {OutputFileName}"
     subprocess.call(cmd, shell=True)
+    print("screen Recording has been ended")
 
 def VoiceCapture(stream,frames):
     date = stream.read(1024) #records the voice
@@ -68,16 +72,20 @@ def VoiceEnd(AudioFile_name,audio,frames):
     soundFile.close()
 
 def VoiceRecording(stream,frames,AudioFile_name,audio):
-    print("Voice")
-    try:
-        while True:
-            VoiceCapture(stream,frames)
-    except KeyboardInterrupt:
-        print("Voice Recording stopped")
+    print("voice Recording has been started")
+    print("press the key 'q' to exit stop voice recording")
+    while True:
+        VoiceCapture(stream,frames)
+        
+        if msvcrt.kbhit():
+            if ord(msvcrt.getch()) == ord('q'):
+                break
+
 
     stream.stop_stream()
     stream.close()
     audio.terminate()
 
     VoiceEnd(AudioFile_name,audio,frames)
+    print("voice Recording has been ended")
 
