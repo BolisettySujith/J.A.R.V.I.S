@@ -20,7 +20,7 @@ import psutil
 import instaloader
 import pyautogui
 import PyPDF2
-from ScreenRecorder import Recording
+from Recordings import Record_Option
 from PIL import ImageGrab
 from win32api import GetSystemMetrics
 import pyaudio
@@ -225,10 +225,11 @@ class MainThread(QThread):
                 self.Covid(s)
             #Command for screenRecording
             #Eg: Jarvis start Screen recording
-            elif ("recording" in self.command) or ("screen recording" in self.command):
-                self.talk("Boss screen recording is started")
+            elif ("recording" in self.command) or ("screen recording" in self.command) or ("voice recording" in self.command):
                 try:
-                    Recording()
+                    self.talk("Boss press q key to stop recordings")
+                    option = self.command
+                    Record_Option(option=option)
                     self.talk("Boss recording is being saved")
                 except:
                     self.talk("Boss an unexpected error occured couldn't start screen recording")
