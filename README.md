@@ -14,7 +14,7 @@ I have wrote code which you can use JARVIS in the following ways :
 
 - It can tell **count of Covid-19 cases for each state in India**
 - It can do **Screen Recording with voice recording** stuff.
-- It can do **Only voice recording**
+- It can also do **voice recording**
 - It can access your **mobile camera**
 - It can access your **web camera**
 - It can **find the location of a phone number**
