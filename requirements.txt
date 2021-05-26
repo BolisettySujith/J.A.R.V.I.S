@@ -4,7 +4,6 @@ numpy==1.20.3
 psutil==5.8.0
 PyAutoGUI==0.9.52
 pyjokes==0.6.0
-pypiwin32==223
 PyQt5==5.15.2
 PyQt5-Qt5==5.15.2
 pyqt5-plugins==5.15.2.2.0.1
@@ -12,7 +11,6 @@ PyQt5-sip==12.8.1
 pyqt5-tools==5.15.2.3
 pyttsx3==2.90
 pywhatkit==4.7
-pywin32==300
 requests==2.25.1
 urllib3==1.26.4
 wikipedia==1.4.0
