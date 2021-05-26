@@ -3,11 +3,11 @@ import datetime
 from PIL import ImageGrab
 import numpy as np 
 import cv2
-from win32api import GetSystemMetrics
 import pyaudio
 import wave
 import subprocess
 import msvcrt
+import pyautogui
 
 def Record_Option(option):
     
@@ -27,8 +27,7 @@ def ScreenRecording(audio,VideoFile_name,AudioFile_name,OutputFileName,frames,st
     print("Screen Recording has been started")
     print("press the key 'q' to exit stop screen recording")
     #fetching the systems resolution
-    width = GetSystemMetrics(0)
-    height = GetSystemMetrics(1)
+    width, height= pyautogui.size()
     #declaring the fourcc as mp4v
     fourcc = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
     captured_video = cv2.VideoWriter(VideoFile_name, fourcc, 20.0, (width, height))
