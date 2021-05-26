@@ -22,7 +22,6 @@ import pyautogui
 import PyPDF2
 from Recordings import Record_Option
 from PIL import ImageGrab
-from win32api import GetSystemMetrics
 import pyaudio
 import wave
 import numpy as np 
