@@ -1,6 +1,5 @@
 SpeechRecognition==3.8.1
 beautifulsoup4==4.9.3
-
 psutil==5.8.0
 PyAutoGUI==0.9.52
 pyjokes==0.6.0
