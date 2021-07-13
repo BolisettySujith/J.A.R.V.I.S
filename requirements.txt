@@ -1,6 +1,6 @@
 SpeechRecognition==3.8.1
 beautifulsoup4==4.9.3
-numpy==1.20.3
+
 psutil==5.8.0
 PyAutoGUI==0.9.52
 pyjokes==0.6.0
@@ -12,7 +12,7 @@ pyqt5-tools==5.15.2.3
 pyttsx3==2.90
 pywhatkit==4.7
 requests==2.25.1
-urllib3==1.26.4
+urllib3==1.26.6
 wikipedia==1.4.0
 DateTime==4.3
 opencv-python==4.5.2.52
@@ -27,8 +27,8 @@ speedtest-cli==2.1.3
 pytube==10.8.1
 os-sys==2.1.4
 subprocess32==3.5.4
-qt5-applications==5.15.2.2.1
-qt5-tools==5.15.2.1.0.1
+qt5-applications
+qt5-tools
 Pillow==8.2.0
 PyWave==0.5.0
 phonenumbers==8.12.23
