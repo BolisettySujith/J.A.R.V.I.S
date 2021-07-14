@@ -99,7 +99,7 @@ class MainThread(QThread):
             elif 'time' in self.command : 
                 self.Clock_time(self.command)
             #Interaction commands with JARVIS
-            elif ('your age' in self.command) or ('are you single'in self.command) or ('are you there' in self.command) or ('tell me something' in self.command):
+            elif ('your age' in self.command) or ('are you single'in self.command) or ('are you there' in self.command) or ('tell me something' in self.command) or ('thank you' in self.command):
                 self.Fun(self.command)
             elif ('hi' in self.command) or ('hai' in self.command) or ('hey' in self.command) or ('hello' in self.command):
                 self.comum(self.command)
@@ -511,6 +511,8 @@ class MainThread(QThread):
             self.talk('Yes boss I am here')
         elif 'tell me something' in command:
             self.talk('boss, I don\'t have much to say, you only tell me someting i will give you the company')
+        elif 'thank you' in command:
+            self.talk('boss, I am here to help you..., your welcome')
         else :
             self.No_result_found()
 
