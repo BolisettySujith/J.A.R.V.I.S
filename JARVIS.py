@@ -141,7 +141,7 @@ class MainThread(QThread):
                 self.college(self.command)
             #command to search for something in wikipedia
             #Eg: what is meant by python in wikipedia (or) search for "_something_" in wikipedia
-            elif 'wikipedia' in self.command:
+            elif ('wikipedia' in self.command) or ('what is meant by' in self.command) or ('tell me about' in self.command) or ('who the heck is' in self.command):
                 self.B_S(self.command)
             #command for opening your browsers and search for information in google
             elif ('open google'in self.command) or ('open edge'in self.command) :
@@ -609,13 +609,20 @@ class MainThread(QThread):
     def B_S(self,command):
         print(command)
         try:
-            if 'wikipedia' in command:
-                print("searching wikipedia....")
+            # ('what is meant by' in self.command) or ('tell me about' in self.command) or ('who the heck is' in self.command)
+            if ('wikipedia' in command):
                 target1 = command.replace('search for','')
                 target1 = target1.replace('in wikipedia','')
-                info = wikipedia.summary(target1,5)
-                print(info)
-                self.talk("according to wikipedia "+info)
+            elif('what is meant by' in command):
+                target1 = command.replace("what is meant by"," ")
+            elif('tell me about' in command):
+                target1 = command.replace("tell me about"," ")
+            elif('who the heck is' in command):
+                target1 = command.replace("who the heck is"," ")
+            print("searching....")
+            info = wikipedia.summary(target1,5)
+            print(info)
+            self.talk("according to wikipedia "+info)
         except :
             self.No_result_found()
         
