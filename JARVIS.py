@@ -421,14 +421,22 @@ class MainThread(QThread):
             print(I)
             if ("check" in I):
                 self.Covid(I)
+            elif("no" in I):
+                self.talk("Okay boss stay home stay safe")
             else:
                 self.talk("Okay boss stay home stay safe")
-                pass
         except:
             self.talk("Boss some error occured, please try again")
-            self.talk("Boss which state covid 19 status do you want to check")
+            self.talk("Boss do you want any information of other states")
             I = self.take_Command()
-            self.Covid(I)
+            if("yes" in I):
+                self.talk("boss, Which state covid status do u want to check")
+                Sta = self.take_Command()
+                self.Covid(Sta)
+            elif("no" in I):
+                self.talk("Okay boss stay home stay safe")
+            else:
+                self.talk("Okay boss stay home stay safe")
 
     #Whatsapp
     def whatsapp(self,command):
