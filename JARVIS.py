@@ -101,7 +101,7 @@ class MainThread(QThread):
             #Interaction commands with JARVIS
             elif ('your age' in self.command) or ('are you single'in self.command) or ('are you there' in self.command) or ('tell me something' in self.command) or ('thank you' in self.command):
                 self.Fun(self.command)
-            elif ('hi' in self.command) or ('hai' in self.command) or ('hey' in self.command) or ('hello' in self.command):
+            elif (('hi' in self.command) and len(self.command)==2) or (('hai' in self.command) or ('hey' in self.command) and len(self.command)==3) or (('hello' in self.command) and len(self.command)==4):
                 self.comum(self.command)
             elif ('what can you do' in self.command) or ('your name' in self.command) or ('my name' in self.command) or ('university name' in self.command):
                 self.Fun(self.command)
