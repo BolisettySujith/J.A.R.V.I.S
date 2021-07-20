@@ -96,10 +96,10 @@ Due to covid19 in my house I'm in a seperate room, without talking with anyone, 
 
 ### How to Contribute 🤔
 
-To contribute to this project you can clone the project as mentioned in *Installation*, and make an issue on bug fixing or adding new features, and make a PR 😊.
+To contribute to this project you can **```FORK && clone```** 🍴 the project as mentioned in *Installation*, and make an issue on bug fixing or adding new features, and make a PR 😊.
 
 ### Future plans😇
 
 In the present JARVIS GUI we cannot see the commands running but they are visible on the terminal, so plan to bring up the commands to display on the GUI.
 
-If you like the repository **```FORK```** 🍴 the repository, start using JARVIS, and don't forget to **⭐** the repository.
+If you like the repository **```FORK && clone```** 🍴 the repository, start using JARVIS, and don't forget to **⭐** the repository.
