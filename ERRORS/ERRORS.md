@@ -32,5 +32,5 @@ If you get any errors😞 regarding **ffmpeg** follow the instructions :
 
 If you got the above type of similar screen, it is because the path's for the background or the elements are not declared properly, so for this you can declare the name of the files from the home directory in ```JarvisUi.py``` file in case if u got RED SCREEN or any elements are missing.
 
-Eg : If gave for the background image from the home directory, the path can be like this.
+Eg : I gave the path for the background image from the home directory, the path can be like this.
 > ```E:/amFOSS/JARVIS/JarvisUI/bg2.jpg``` or ```E://amFOSS//JARVIS//JarvisUI//bg2.jpg``` 
