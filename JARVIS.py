@@ -47,16 +47,6 @@ engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice',voices[0].id) #index '0' for 'David'(male) voice index '1' for 'zira'(female) voice
 
-#NOTE
-#Initialize your whatsapp contack info of individual and group
-#If you want to send to an individual save the name of them and phone number in the contact dictionary below
-#if you want to send a message in a whatsapp group declare the name of the group with "group" tag so JARVIS will not be confused to send to individual or for a group 
-#else you can also create a new dictionary for groups
-#for the key value pairs in the whatsapp group you need to save the group name as key and group 22 charcters ID as the value the ID can be found in the group invite link
-# Eg  key = "school group" value = "IHNJFHT4uJAFBJAKJAVBu5"
-#declare the individual's contact number with the starting of their country code
-contact = {"sujith":"+918945751262","school group":"IHNJFHT4uJAFBJAKJAVBu5"} #Example dictionary
-
 #Main classs where all the functiona are present
 class MainThread(QThread):
     def __init__(self):
@@ -79,8 +69,6 @@ class MainThread(QThread):
                 command1 = command1.lower()  
                 if 'jarvis' in command1: 
                     command1 = command1.replace('jarvis','')
-                if 'java' in command1: 
-                    command1 = command1.replace('java','')
                 
             return command1
         except:
@@ -101,7 +89,7 @@ class MainThread(QThread):
             #Interaction commands with JARVIS
             elif ('your age' in self.command) or ('are you single'in self.command) or ('are you there' in self.command) or ('tell me something' in self.command) or ('thank you' in self.command):
                 self.Fun(self.command)
-            elif (('hi' in self.command) and len(self.command)==2) or (('hai' in self.command) or ('hey' in self.command) and len(self.command)==3) or (('hello' in self.command) and len(self.command)==4):
+            elif (('hi' in self.command) and len(self.command)==2) or ((('hai' in self.command) or ('hey' in self.command)) and len(self.command)==3) or (('hello' in self.command) and len(self.command)==5):
                 self.comum(self.command)
             elif ('what can you do' in self.command) or ('your name' in self.command) or ('my name' in self.command) or ('university name' in self.command):
                 self.Fun(self.command)
@@ -216,6 +204,15 @@ class MainThread(QThread):
             #Eg: jarvis open webcamera
             elif ('web cam'in self.command) :
                 self.webCam()
+            #Command for creating a new contact
+            elif("create a new contact" in self.command):
+                self.AddContact()
+            #Command for searching for a contact
+            elif("number in contacts" in self.command):
+                self.NameIntheContDataBase(self.command)
+            #Command for displaying all contacts
+            elif("display all the contacts" in self.command):
+                self.Display()
             #Command for checking covid status in India
             #Eg: jarvis check covid (or) corona status
             elif ("covid" in self.command) or  ("corona" in self.command):
@@ -443,20 +440,89 @@ class MainThread(QThread):
         try:
             command = command.replace('send a message to','')
             command = command.strip()
-            numberID = contact[command]
-            print(numberID)
-            self.talk(f'Boss, what message do you want to send to {command}')
-            message = self.take_Command()
-            hour = int(datetime.datetime.now().hour)
-            min = int(datetime.datetime.now().minute)
-            print(hour,min)
-            if "group" in command:
-                kit.sendwhatmsg_to_group(numberID,message,int(hour),int(min)+1)
-            else:
-                kit.sendwhatmsg(numberID,message,int(hour),int(min)+1)
-            self.talk("Boss message have been sent")
+            name,numberID,F = self.SearchCont(command)
+            if F:
+                print(numberID)
+                self.talk(f'Boss, what message do you want to send to {name}')
+                message = self.take_Command()
+                hour = int(datetime.datetime.now().hour)
+                min = int(datetime.datetime.now().minute)
+                print(hour,min)
+                if "group" in command:
+                    kit.sendwhatmsg_to_group(numberID,message,int(hour),int(min)+1)
+                else:
+                    kit.sendwhatmsg(numberID,message,int(hour),int(min)+1)
+                self.talk("Boss message have been sent")
+            if F==False:
+                self.talk(f'Boss, the name not found in our data base, shall I add the contact')
+                AddOrNot = self.take_Command()
+                print(AddOrNot)
+                if ("yes" in AddOrNot) or ("add" in AddOrNot) or ("yeah" in AddOrNot) or ("yah" in AddOrNot):
+                    self.AddContact()
+                elif("no" in AddOrNot):
+                    self.talk('Ok Boss')
         except:
             print("Error occured, please try again")
+
+    
+    #Add contacts
+    def AddContact(self):
+        self.talk(f'Boss, Enter the contact details')
+        name = input("Enter the name :").lower()
+        number = input("Enter the number :")
+        NumberFormat = f'"{name}":"+91{number}"'
+        ContFile = open("Contacts.txt", "a") 
+        ContFile.write(f"{NumberFormat}\n")
+        ContFile.close()
+        self.talk(f'Boss, Contact Saved Successfully')
+
+    #Search Contact
+    def SearchCont(self,name):
+        with open("Contacts.txt","r") as ContactsFile:
+            for line in ContactsFile:
+                if name in line:
+                    print("Name Match Found")
+                    s = line.split("\"")
+                    return s[1],s[3],True
+        return 0,0,False
+    
+    #Display all contacts
+    def Display(self):
+        ContactsFile = open("Contacts.txt","r")
+        count=0
+        for line in ContactsFile:
+            count+=1
+        ContactsFile.close()
+        ContactsFile = open("Contacts.txt","r")
+        self.talk(f"Boss displaying the {count} contacts stored in our data base")    
+        for line in ContactsFile:
+            s = line.split("\"")
+            print("Name: "+s[1])
+            print("Number: "+s[3])
+        ContactsFile.close()
+
+    #search contact
+    def NameIntheContDataBase(self,command):
+        line = command
+        line = line.split("number in contacts")[0]
+        if("tell me" in line):
+            name = line.split("tell me")[1]
+            name = name.strip()
+        else:
+            name= line.strip()
+        name,number,bo = self.SearchCont(name)
+        if bo:
+            print(f"Contact Match Found in our data base with {name} and the mboile number is {number}")
+            self.talk(f"Boss Contact Match Found in our data base with {name} and the mboile number is {number}")
+        else:
+            self.talk("Boss the name not found in our data base, shall I add the contact")
+            AddOrNot = self.take_Command()
+            print(AddOrNot)
+            if ("yes add it" in AddOrNot)or ("yeah" in AddOrNot) or ("yah" in AddOrNot):
+                self.AddContact()
+                self.talk(f'Boss, Contact Saved Successfully')
+            elif("no" in AddOrNot) or ("don't add" in AddOrNot):
+                self.talk('Ok Boss')
 
     #Internet spped
     def InternetSpeed(self):
