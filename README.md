@@ -19,6 +19,7 @@ I have wrote code which you can use JARVIS in the following ways :
 - It can access your **web camera**
 - It can **find the location of a phone number**
 - It can read **pdf's**
+- It can work as a **telephone dictionary**(Add contacts, search contacts)
 - It can check/find your **Internet speed**
 - It can tell your **IP address**
 - It can tell the **latest news**
