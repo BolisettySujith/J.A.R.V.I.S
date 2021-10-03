@@ -112,6 +112,7 @@ You can contribute on the following:
 - **Make the Project OS independent**
   - At present this project is supported to windows only, so we want to make it OS independent(Linux)
 - Add your name in the ```Contributors.md``` file.
+
 Finally, make a ```PR``` ✍ on the features you are adding, also If u are changing any GUI I would recommend you to attach any Screenshots/Video regarding that changes, it would be very helpful to me while reviewing.
 
 ### Future plans😇
