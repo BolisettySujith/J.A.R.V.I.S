@@ -1,5 +1,10 @@
 # **J.A.R.V.I.S**
 
+<p align="left"> 
+  <img src="https://img.shields.io/github/stars/BolisettySujith/J.A.R.V.I.S.svg" alt="BolisettySujith" /> 
+  <img src="https://img.shields.io/github/forks/BolisettySujith/J.A.R.V.I.S.svg" alt="BolisettySujith" /> 
+  <img src="https://img.shields.io/github/issues/BolisettySujith/J.A.R.V.I.S.svg" alt="BolisettySujith" /> 
+</p>
 It is a voice assistant which can be used to interact with your computer and also you have been seeing it in Iron man movies, but this JARVIS is not that much advanced as shown in movies. 
 
 ### Built with: Python<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" alt="Python" height="40" style="vertical-align:top">
@@ -95,7 +100,19 @@ Due to covid19 in my house I'm in a seperate room, without talking with anyone, 
 
 ### How to Contribute 🤔
 
-To contribute to this project you can **```FORK && clone```** 🍴 the project as mentioned in *Installation*, and make an issue on bug fixing or adding new features, and make a PR 😊.
+To contribute to this project you can **```FORK && clone```** 🍴 the project as mentioned in *Installation*, 
+You can contribute on the following:
+
+- **Add Interation commands**
+  - If you want to add Interation commands you need to add atleast **5** interation commands.
+- **Update current GUI**
+  - Feel free to change the GUI if u have any new design ideas.
+- **Add more feature** 
+  - There are many things that we can do with python. So I'm very happy to accept any such type of features.
+- **Make the Project OS independent**
+  - At present this project is supported to windows only, so we want to make it OS independent(Linux)
+- Add your name in the ```Contributors.md``` file.
+Finally, make a ```PR``` ✍ on the features you are adding, also If u are changing any GUI I would recommend you to attach any Screenshots/Video regarding that changes, it would be very helpful to me while reviewing.
 
 ### Future plans😇
 
