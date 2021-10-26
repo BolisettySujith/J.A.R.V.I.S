@@ -39,6 +39,7 @@ from state import state
 from pywikihow import search_wikihow
 import speedtest
 from pytube import YouTube
+import qrcode
 
 #Set our engine to "Pyttsx3" which is used for text to speech in Python 
 #and sapi5 is Microsoft speech application platform interface 
@@ -268,6 +269,9 @@ class MainThread(QThread):
             #jarvis check the surroundings temperature
             elif "temperature" in self.command:
                 self.temperature()
+            #Command to generate the qr codes
+            elif "create a qr code" in self.command:
+                self.qrCodeGenerator()
             #command for checking internet speed
             #Eg: jarvis check my internet speed
             elif "internet speed" in self.command:
@@ -356,6 +360,27 @@ class MainThread(QThread):
         data = BeautifulSoup(r.text,"html.parser")
         temp = data.find("div",class_="BNeawe").text
         self.talk(f"current {search} is {temp}")
+    
+    #qrCodeGenerator
+    def qrCodeGenerator(self):
+        self.talk(f"Boss enter the text/link that you want to keep in the qr code")
+        input_Text_link = input("Enter the Text/Link : ")
+        qr = qrcode.QRCode(
+            version=1,
+            error_correction=qrcode.constants.ERROR_CORRECT_L,
+            box_size=15,
+            border=4,
+        )
+        QRfile_name = (str(datetime.datetime.now())).replace(" ","-")
+        QRfile_name = QRfile_name.replace(":","-")
+        QRfile_name = QRfile_name.replace(".","-")
+        QRfile_name = QRfile_name+"-QR.png"
+        qr.add_data(input_Text_link)
+        qr.make(fit=True)
+
+        img = qr.make_image(fill_color="black", back_color="white")
+        img.save(f"QRCodes\{QRfile_name}")
+        self.talk(f"Boss the qr code has been generated")
 
     #Mobile camera
     def Mobilecamra(self):
