@@ -1,19 +1,25 @@
-# **J.A.R.V.I.S**
+# <p align="center"><img src="UI\ReadmeHeader.gif" alt="JARVIS" width="100%"/></a></p>
 
-<p align="left"> 
+<p align="center"> 
   <img src="https://img.shields.io/github/stars/BolisettySujith/J.A.R.V.I.S.svg" alt="BolisettySujith" /> 
   <img src="https://img.shields.io/github/forks/BolisettySujith/J.A.R.V.I.S.svg" alt="BolisettySujith" /> 
-  <img src="https://img.shields.io/github/issues/BolisettySujith/J.A.R.V.I.S.svg" alt="BolisettySujith" /> 
 </p>
+
+
+<p align="center"> 
+  <img src="https://img.shields.io/github/issues/BolisettySujith/J.A.R.V.I.S.svg" alt="BolisettySujith" /> 
+  <img src="https://img.shields.io/github/contributors/BolisettySujith/J.A.R.V.I.S.svg" alt="Contrinutors" /> 
+  <img src="https://img.shields.io/github/license/BolisettySujith/J.A.R.V.I.S.svg" alt="License" /> 
+</p>
+
+## Introduction 👨‍💻
 It is a voice assistant which can be used to interact with your computer and also you have been seeing it in Iron man movies, but this JARVIS is not that much advanced as shown in movies. 
 
 ### Built with: Python<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" alt="Python" height="40" style="vertical-align:top">
 
 - Demo video for ***JARVIS*** is available [here](https://docs.google.com/presentation/d/14w4dQUpqVOmGvAXEn8vYkHQUmMYU72wIb-AK0SWCWYk/edit?usp=sharing)
 
-### Cool functionalities of JARVIS 😎 :)
-<p align="center"><img src="https://thumbs.gfycat.com/FreshAnyHanumanmonkey-size_restricted.gif" alt="JARVIS" width="75%"/></a></p>
-
+## Cool functionalities of JARVIS 😎 :)
 
 I have wrote code which you can use JARVIS in the following ways :
 
@@ -25,6 +31,7 @@ I have wrote code which you can use JARVIS in the following ways :
 - It can **find the location of a phone number**
 - It can read **pdf's**
 - It can work as a **telephone dictionary**(Add contacts, search contacts)
+- It can **generate qr codes** for Links/anyText.
 - It can check/find your **Internet speed**
 - It can tell your **IP address**
 - It can tell the **latest news**
@@ -60,18 +67,18 @@ I have wrote code which you can use JARVIS in the following ways :
 
 > **NOTE:** Before running the code you must make sure you have all the modules installed in your python version(***NOTE:*** python version can be >=3.6).
 
-### These are the following modules used in JARVIS😉 :
+## These are the following modules used in JARVIS📚 :
 
 [SpeechRecognisation](https://pypi.org/project/SpeechRecognition/) | [PyAudio](https://pypi.org/project/PyAudio/) | [pyttsx3](https://pypi.org/project/pyttsx3/) | [pywhatkit](https://pypi.org/project/pywhatkit/) | [datetime](https://pypi.org/project/DateTime/) | [wikipedia](https://pypi.org/project/wikipedia/) | [pyjokes](https://pypi.org/project/pyjokes/) | [cv2](https://pypi.org/project/opencv-python/) | [cv2 tools](https://pypi.org/project/cv2-tools/) | [requests](https://pypi.org/project/requests/) | [smtplib](https://pypi.org/project/secure-smtplib/) | [psutil](https://pypi.org/project/psutil/) | [random](https://pypi.org/project/random2/) | [instaloader](https://pypi.org/project/instaloader/) | [PyAutoGUI](https://pypi.org/project/PyAutoGUI/) | [PyPDF2](https://pypi.org/project/PyPDF2/) | [bs4](https://pypi.org/project/bs4/) | [PyQt5](https://pypi.org/project/PyQt5-Qt5/) | [pywikihow](https://pypi.org/project/pywikihow/) | [speed test](https://pypi.org/project/speedtest-cli/) | [pytube](https://pypi.org/project/pytube/) | [numpy](https://pypi.org/project/numpy/) | [urllib](https://pypi.org/project/urllib3/) | [covid](https://pypi.org/project/covid-india/) | [phonenumbers](https://pypi.org/project/phonenumbers/) | [folium](https://pypi.org/project/folium/) | [opencage](https://pypi.org/project/opencage/) | [pillow](https://pypi.org/project/Pillow/) | [Pywave](https://pypi.org/project/PyWave/) | [win32api](https://pypi.org/project/pywin32/) | [mscvrt](https://docs.python.org/dev/library/msvcrt.html#msvcrt.kbhit)
 
-### API keys
+## API keys 🔑
 To run this project you should need some API key's for reading news, for finding phone number location. Register for your API key by clicking the following
 - [NewsAPI](https://newsapi.org/) : used for fetching news
 - [Open cage](https://opencagedata.com/) : to locate a place in maps
 
 > *Note* : supported OS : **Windows**, working on the making the JARVIS for Linux, but it many take some time.
 
-### Installation
+## Installation 💻
 - You need to first ```fork``` this repository and ```clone``` the repository to your local system 
 
     ```git clone https://github.com/<your-github-username>/J.A.R.V.I.S.git```
@@ -91,15 +98,15 @@ That's it **#Enjoy** speaking with your computer friend 😁
 
 Demo video for ***JARVIS*** is available [here](https://docs.google.com/presentation/d/14w4dQUpqVOmGvAXEn8vYkHQUmMYU72wIb-AK0SWCWYk/edit?usp=sharing)
 
-### FINAL GUI of JARVIS😎
+## FINAL GUI of JARVIS😎
 <p align="center"><img src="JAR.gif" alt="JARVIS" width="75%"/></a></p>
 
 > Note: For any errors while installing the python modules refer [**```ERRORS.md```**](https://github.com/BolisettySujith/J.A.R.V.I.S/blob/main/ERRORS/ERRORS.md) because I got some errors while installing and using them.
 
-### Motivation for this project🙃
+## Motivation for this project🙃
 Due to covid19 in my house I'm in a seperate room, without talking with anyone, so thought to talk with my laptop which I will use everyday, and came up with this project.
 
-### How to Contribute 🤔
+## How to Contribute 🤔
 
 To contribute to this project you can **```FORK && clone```** 🍴 the project as mentioned in *Installation*, 
 You can contribute on the following:
@@ -116,7 +123,7 @@ You can contribute on the following:
 
 Finally, make a ```PR``` ✍ on the features you are adding, also If u are changing any GUI I would recommend you to attach any Screenshots/Video regarding that changes, it would be very helpful to me while reviewing.
 
-### Future plans😇
+## Future plans😇
 
 In the present JARVIS GUI we cannot see the commands running but they are visible on the terminal, so plan to bring up the commands to display on the GUI.
 
