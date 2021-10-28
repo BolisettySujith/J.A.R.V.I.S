@@ -85,11 +85,11 @@ class MainThread(QThread):
             if ('play a song' in self.command) or ('youtube' in self.command) or ("download a song" in self.command) or ("download song" in self.command) : 
                 #commands for opening youtube, playing a song in youtube, and download a song in youtube
                 self.yt(self.command) #function is from line 555
+            #Interaction commands with JARVIS
+            elif ('your age' in self.command) or ('are you single'in self.command) or ('are you there' in self.command) or ('tell me something' in self.command) or ('thank you' in self.command) or ('in your free time' in self.command):
+                self.Fun(self.command)
             elif 'time' in self.command : 
                 self.Clock_time(self.command)
-            #Interaction commands with JARVIS
-            elif ('your age' in self.command) or ('are you single'in self.command) or ('are you there' in self.command) or ('tell me something' in self.command) or ('thank you' in self.command):
-                self.Fun(self.command)
             elif (('hi' in self.command) and len(self.command)==2) or ((('hai' in self.command) or ('hey' in self.command)) and len(self.command)==3) or (('hello' in self.command) and len(self.command)==5):
                 self.comum(self.command)
             elif ('what can you do' in self.command) or ('your name' in self.command) or ('my name' in self.command) or ('university name' in self.command):
@@ -612,6 +612,8 @@ class MainThread(QThread):
             self.talk('boss, I don\'t have much to say, you only tell me someting i will give you the company')
         elif 'thank you' in command:
             self.talk('boss, I am here to help you..., your welcome')
+        elif 'in your free time' in self.command:
+            self.talk('boss, I will be listening to all your words')
         else :
             self.No_result_found()
 
