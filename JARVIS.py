@@ -86,7 +86,7 @@ class MainThread(QThread):
                 #commands for opening youtube, playing a song in youtube, and download a song in youtube
                 self.yt(self.command) #function is from line 555
             #Interaction commands with JARVIS
-            elif ('your age' in self.command) or ('are you single'in self.command) or ('are you there' in self.command) or ('tell me something' in self.command) or ('thank you' in self.command) or ('in your free time' in self.command):
+            elif ('your age' in self.command) or ('are you single'in self.command) or ('are you there' in self.command) or ('tell me something' in self.command) or ('thank you' in self.command) or ('in your free time' in self.command) or ('i love you' in self.command) or ('can you hear me' in self.command) or ('do you ever get tired' in self.command):
                 self.Fun(self.command)
             elif 'time' in self.command : 
                 self.Clock_time(self.command)
@@ -614,6 +614,12 @@ class MainThread(QThread):
             self.talk('boss, I am here to help you..., your welcome')
         elif 'in your free time' in self.command:
             self.talk('boss, I will be listening to all your words')
+        elif 'i love you' in command:
+            self.talk('I love you too boss')
+        elif 'can you hear me' in command:
+            self.talk('Yes Boss, I can hear you')
+        elif 'do you ever get tired' in command:
+            self.talk('It would be impossible to tire of our conversation')
         else :
             self.No_result_found()
 
