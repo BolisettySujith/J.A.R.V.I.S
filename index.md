@@ -1,5 +1,18 @@
-# **J.A.R.V.I.S**
+# <p align="center"><img src="https://github.com/BolisettySujith/J.A.R.V.I.S/blob/main/UI/ReadmeHeader.gif" alt="JARVIS" width="100%"/></a></p>
 
+<p align="center"> 
+  <img src="https://img.shields.io/github/stars/BolisettySujith/J.A.R.V.I.S.svg" alt="BolisettySujith" /> 
+  <img src="https://img.shields.io/github/forks/BolisettySujith/J.A.R.V.I.S.svg" alt="BolisettySujith" /> 
+</p>
+
+
+<p align="center"> 
+  <img src="https://img.shields.io/github/issues/BolisettySujith/J.A.R.V.I.S.svg" alt="BolisettySujith" /> 
+  <img src="https://img.shields.io/github/contributors/BolisettySujith/J.A.R.V.I.S.svg" alt="Contrinutors" /> 
+  <img src="https://img.shields.io/github/license/BolisettySujith/J.A.R.V.I.S.svg" alt="License" /> 
+</p>
+
+## Introduction 👨‍💻
 It is a voice assistant which can be used to interact with your computer and also you have been seeing it in Iron man movies, but this JARVIS is not that much advanced as shown in movies. 
 
 ### Built with: Python<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" alt="Python" height="40" style="vertical-align:top">
@@ -7,18 +20,19 @@ It is a voice assistant which can be used to interact with your computer and als
 - Demo video for ***JARVIS*** is available [here](https://docs.google.com/presentation/d/14w4dQUpqVOmGvAXEn8vYkHQUmMYU72wIb-AK0SWCWYk/edit?usp=sharing)
 
 ### Cool functionalities of JARVIS 😎 :)
-<p align="center"><img src="https://thumbs.gfycat.com/FreshAnyHanumanmonkey-size_restricted.gif" alt="JARVIS" width="75%"/></p>
 
 
 I have wrote code which you can use JARVIS in the following ways :
 
 - It can tell **count of Covid-19 cases for each state in India**
-- Ic can do **Screen Recording with voice recording** stuff
+- It can do **Screen Recording with voice recording** stuff.
 - It can also do **voice recording**
 - It can access your **mobile camera**
 - It can access your **web camera**
+- It can **find the location of a phone number**
 - It can read **pdf's**
 - It can work as a **telephone dictionary**(Add contacts, search contacts)
+- It can **generate qr codes** for Links/anyText.
 - It can check/find your **Internet speed**
 - It can tell your **IP address**
 - It can tell the **latest news**
