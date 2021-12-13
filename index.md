@@ -1,6 +1,6 @@
 <h1 align="center">J.A.R.V.I.S</h1>
-<h2 align="center"><img src="https://user-images.githubusercontent.com/73323807/145879527-c6da25b4-5476-4fb3-bf6c-f0793ca50be2.gif" alt="JARVIS" width="100%"/></a>
-
+<h2 align="center"><img src="https://user-images.githubusercontent.com/73323807/145879527-c6da25b4-5476-4fb3-bf6c-f0793ca50be2.gif" alt="JARVIS" width="100%"/>
+  
 <p align="center"> 
   <img src="https://img.shields.io/github/stars/BolisettySujith/J.A.R.V.I.S.svg" alt="BolisettySujith" /> 
   <img src="https://img.shields.io/github/forks/BolisettySujith/J.A.R.V.I.S.svg" alt="BolisettySujith" /> 
