@@ -1,5 +1,5 @@
-# <p align="center">J.A.R.V.I.S</p>
-## <p align="center"><img src="https://github.com/BolisettySujith/J.A.R.V.I.S/blob/main/UI/ReadmeHeader.gif" alt="JARVIS" width="100%"/></a></p>
+<h1 align="center">J.A.R.V.I.S</h1>
+<h2 align="center"><img src="https://user-images.githubusercontent.com/73323807/145879527-c6da25b4-5476-4fb3-bf6c-f0793ca50be2.gif" alt="JARVIS" width="100%"/></a>
 
 <p align="center"> 
   <img src="https://img.shields.io/github/stars/BolisettySujith/J.A.R.V.I.S.svg" alt="BolisettySujith" /> 
@@ -12,6 +12,10 @@
   <img src="https://img.shields.io/github/contributors/BolisettySujith/J.A.R.V.I.S.svg" alt="Contrinutors" /> 
   <img src="https://img.shields.io/github/license/BolisettySujith/J.A.R.V.I.S.svg" alt="License" /> 
 </p>
+
+</h2>
+
+
 
 ### Introduction 👨‍💻
 It is a voice assistant which can be used to interact with your computer and also you have been seeing it in Iron man movies, but this JARVIS is not that much advanced as shown in movies. 
