@@ -110,6 +110,9 @@ Due to covid19 in my house I'm in a seperate room, without talking with anyone, 
 
 To contribute to this project please read the [CONTRITUTING.md](https://github.com/BolisettySujith/J.A.R.V.I.S/blob/main/CONTRIBUTING.md) file.
 
+## Want to run JARVIS as an Application?
+Read [this](https://github.com/BolisettySujith/J.A.R.V.I.S/blob/main/py2exe.md), to convert a .`py` file to `.exe` file. 
+
 ## Future plans😇
 
 In the present JARVIS GUI we cannot see the commands running but they are visible on the terminal, so plan to bring up the commands to display on the GUI.
