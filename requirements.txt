@@ -28,7 +28,7 @@ os-sys==2.1.4
 subprocess32==3.5.4
 qt5-applications
 qt5-tools
-Pillow==9.0.0
+Pillow>=9.0.1
 PyWave==0.5.0
 phonenumbers==8.12.23
 folium==0.12.1
