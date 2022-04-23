@@ -19,7 +19,7 @@ cv2-tools==2.4.0
 secure-smtplib==0.1.1
 random2==1.0.1
 instaloader==4.7.1
-PyPDF2==1.26.0
+PyPDF2>=1.27.5
 bs4==0.0.1
 pywikihow==0.5.7
 speedtest-cli==2.1.3
