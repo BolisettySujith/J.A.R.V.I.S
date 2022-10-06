@@ -245,11 +245,14 @@ class MainThread(QThread):
             #command for playing a dowloaded mp3 song in which is present in your system
             #Eg: Jarvis play music
             elif 'music' in self.command:
-                music_dir = 'E:\\music' #change the song path directory if you have songs in other directory
-                songs = os.listdir(music_dir)
-                for song in songs:
-                    if song.endswith('.mp3'):
-                        os.startfile(os.path.join(music_dir, song))
+                try:
+                    music_dir = 'E:\\music' #change the song path directory if you have songs in other directory
+                    songs = os.listdir(music_dir)
+                    for song in songs:
+                        if song.endswith('.mp3'):
+                            os.startfile(os.path.join(music_dir, song))
+                except:
+                    self.talk("Boss an unexpected error occured")
             #command for knowing your system IP address
             #Eg: jarvis check my ip address
             elif 'ip address' in self.command:
