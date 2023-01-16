@@ -1,4 +1,4 @@
-# <p align="center"><img src="UI\ReadmeHeader.gif" alt="JARVIS" width="100%"/></a></p>
+# <p align="center"><img src="Images/ReadmeHeader.gif" alt="JARVIS" width="100%"/></a></p>
 
 <p align="center"> 
   <img src="https://img.shields.io/github/stars/BolisettySujith/J.A.R.V.I.S.svg" alt="BolisettySujith" /> 
@@ -28,7 +28,24 @@ I have wrote code which you can use JARVIS in the following ways :
 - It can also do **voice recording**
 - It can access your **mobile camera**
 - It can access your **web camera**
-- It can **find the location of a phone number**
+
+- <details>
+  <summary>It can find the location of a phone number</summary>
+  <br>
+  
+    Unfortunately there is no such thing as magic, and neither we, nor anyone else, have the ability to derive a phone’s location from an input string.
+    
+    <b>Here is what is actually happening:</b>
+
+    The phone number is entered and a library is used to turn the country calling code into the name of the country. For example numbers starting with +91 becomes India, +880 is Bangladesh, +34 is Spain, etc.
+
+    The country name is then sent to our geocoding API as a forward geocoding request (placename to coordinates). We then return the coordinates of the center of the country. For example we turn India into 22.3511148, 78.6677428, roughly in the middle of Uttar Pradesh.
+
+    People get confused and angry as to why the coordinates are not actually where the phone is physically located.
+
+    Reference: [We can NOT convert a phone number into a location. Sorry.](https://blog.opencagedata.com/post/we-can-not-convert-a-phone-number-into-a-location-sorry)
+  </details>
+
 - It can read **pdf's**
 - It can work as a **telephone dictionary**(Add contacts, search contacts)
 - It can **generate qr codes** for Links/anyText.
@@ -99,7 +116,7 @@ That's it **#Enjoy** speaking with your computer friend 😁
 Demo video for ***JARVIS*** is available [here](https://docs.google.com/presentation/d/14w4dQUpqVOmGvAXEn8vYkHQUmMYU72wIb-AK0SWCWYk/edit?usp=sharing)
 
 ## FINAL GUI of JARVIS😎
-<p align="center"><img src="JAR.gif" alt="JARVIS" width="75%"/></a></p>
+<p align="center"><img src="Images/JAR.gif" alt="JARVIS" width="75%"/></a></p>
 
 > Note: For any errors while installing the python modules refer [**```ERRORS.md```**](https://github.com/BolisettySujith/J.A.R.V.I.S/blob/main/ERRORS/ERRORS.md) because I got some errors while installing and using them.
 

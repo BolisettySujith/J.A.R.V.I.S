@@ -1,4 +1,7 @@
+import os
+
 def Phonenumber_location_tracker():
+    current_path = os.getcwd()
     #modules used
     import datetime
     import phonenumbers
@@ -26,6 +29,6 @@ def Phonenumber_location_tracker():
     #creating a map with the phone number location as pointer
     mymap = folium.Map(location=[lat,lng],zoom_start=9)
     folium.Marker([lat,lng],popup=location).add_to(mymap)
-    mymap.save(f"E:\\amFOSS\\JARVIS\\Maps\\{num+str('-')+str(time_)}.html")
+    mymap.save(rf"{current_path}/Maps/{num+str('-')+str(time_)}.html")
 
     return location,servise_prover,lat,lng
