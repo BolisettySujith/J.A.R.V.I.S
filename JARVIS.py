@@ -1078,44 +1078,46 @@ class MainThread(QThread):
 
 startExecution = MainThread()
 class Main(QMainWindow):
+    cpath =""
     
-    def __init__(self):
+    def __init__(self,path):
+        self.cpath = path
         super().__init__()
-        self.ui = Ui_JarvisUI()
+        self.ui = Ui_JarvisUI(path=current_path)
         self.ui.setupUi(self)
         self.ui.pushButton_4.clicked.connect(self.startTask)
         self.ui.pushButton_3.clicked.connect(self.close)
     
     #NOTE make sure to place a correct path where you are keeping this gifs
     def startTask(self):
-        self.ui.movie = QtGui.QMovie("E:/amFOSS/JARVIS/JarvisUI/ironman1.gif")
+        self.ui.movie = QtGui.QMovie(rf"{self.cpath}\UI\ironman1.gif")
         self.ui.label_2.setMovie(self.ui.movie)
         self.ui.movie.start()
-        self.ui.movie = QtGui.QMovie("E:/amFOSS/JARVIS/ringJar.gif")
+        self.ui.movie = QtGui.QMovie(rf"{self.cpath}\UI\ringJar.gif")
         self.ui.label_3.setMovie(self.ui.movie)
         self.ui.movie.start()
-        self.ui.movie = QtGui.QMovie("E:/amFOSS/JARVIS/JarvisUI/circle.gif")
+        self.ui.movie = QtGui.QMovie(rf"{self.cpath}\UI\circle.gif")
         self.ui.label_4.setMovie(self.ui.movie)
         self.ui.movie.start()
-        self.ui.movie = QtGui.QMovie("E:/amFOSS/JARVIS/JarvisUI/lines1.gif")
+        self.ui.movie = QtGui.QMovie(rf"{self.cpath}\UI\lines1.gif")
         self.ui.label_7.setMovie(self.ui.movie)
         self.ui.movie.start()
-        self.ui.movie = QtGui.QMovie("E:/amFOSS/JARVIS/JarvisUI/ironman3.gif")
+        self.ui.movie = QtGui.QMovie(rf"{self.cpath}\UI\ironman3.gif")
         self.ui.label_8.setMovie(self.ui.movie)
         self.ui.movie.start()
-        self.ui.movie = QtGui.QMovie("E:/amFOSS/JARVIS/JarvisUI/circle.gif")
+        self.ui.movie = QtGui.QMovie(rf"{self.cpath}\UI\circle.gif")
         self.ui.label_9.setMovie(self.ui.movie)
         self.ui.movie.start()
-        self.ui.movie = QtGui.QMovie("E:/amFOSS/JARVIS/JarvisUI/powersource.gif")
+        self.ui.movie = QtGui.QMovie(rf"{self.cpath}\UI\powersource.gif")
         self.ui.label_12.setMovie(self.ui.movie)
         self.ui.movie.start()
-        self.ui.movie = QtGui.QMovie("E:/amFOSS/JARVIS/JarvisUI/powersource.gif")
+        self.ui.movie = QtGui.QMovie(rf"{self.cpath}\UI\powersource.gif")
         self.ui.label_13.setMovie(self.ui.movie)
         self.ui.movie.start()
-        self.ui.movie = QtGui.QMovie("E:/amFOSS/JARVIS/JarvisUI/ironman3_flipped.gif")
+        self.ui.movie = QtGui.QMovie(rf"{self.cpath}\UI\ironman3_flipped.gif")
         self.ui.label_16.setMovie(self.ui.movie)
         self.ui.movie.start()
-        self.ui.movie = QtGui.QMovie("E:/amFOSS/JARVIS/JarvisUI/Sujith.gif")
+        self.ui.movie = QtGui.QMovie(rf"{self.cpath}\UI\Sujith.gif")
         self.ui.label_17.setMovie(self.ui.movie)
         self.ui.movie.start()
         timer = QTimer(self)
@@ -1131,7 +1133,8 @@ class Main(QMainWindow):
         self.ui.textBrowser.setText(label_date)
         self.ui.textBrowser_2.setText(label_time)
 
+current_path = os.getcwd()
 app = QApplication(sys.argv)
-jarvis = Main()
+jarvis = Main(path=current_path)
 jarvis.show()
 exit(app.exec_())
