@@ -1,4 +1,4 @@
-# <p align="center"><img src="Images/ReadmeHeader.gif" alt="JARVIS" width="100%"/></a></p>
+$ python JarvisWithoutGUI.py# <p align="center"><img src="Images/ReadmeHeader.gif" alt="JARVIS" width="100%"/></a></p>
 
 <p align="center"> 
   <img src="https://img.shields.io/github/stars/BolisettySujith/J.A.R.V.I.S.svg" alt="BolisettySujith" /> 
